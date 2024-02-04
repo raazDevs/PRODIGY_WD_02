@@ -1,0 +1,108 @@
+body {
+  font-family: 'Bodoni MT', Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+  background-color: rgb(247, 247, 247);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.wrapper, .about, .contact {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(209, 50, 14, 0.1);
+}
+
+h1, #seconds, #tens {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #333;
+  background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+button {
+  display: inline-block;
+  border-radius: 50%;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 2em;
+  padding: 18px 10px;
+  width: 130px;
+  height: 130px;
+  margin: 20px;
+  outline: none;
+  border: 3px solid #21D4FD;
+  color: #fff;
+  background: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+  background: transparent;
+  color: #21D4FD; /* Change text color on hover */
+}
+
+.button-start:hover {
+  background: linear-gradient(19deg, #4caf50 0%, #45a049 100%); /* Green gradient on hover */
+}
+
+.button-stop:hover {
+  background: linear-gradient(19deg, #f44336 0%, #c53929 100%); /* Red gradient on hover */
+}
+
+.button-reset:hover {
+  background: linear-gradient(19deg, #607d8b 0%, #546e7a 100%); /* Blue-grey gradient on hover */
+}
+
+.credit, .about, .contact {
+  margin-top: 50px;
+}
+
+.credit b {
+  color: #333;
+}
+
+.about h2, .contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #21D4FD;
+}
+
+.about p, .contact p {
+  font-size: 1.2em;
+}
